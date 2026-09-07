@@ -89,6 +89,22 @@ select:focus-visible {
   text-transform: uppercase;
 }
 
+.brand-logo {
+  width: 104px;
+  height: 68px;
+  overflow: hidden;
+  flex: 0 0 auto;
+  align-items: flex-start;
+}
+
+.brand-logo img {
+  display: block;
+  width: 104px;
+  height: 104px;
+  max-width: none;
+  transform: translateY(-18px);
+}
+
 .nav-links {
   display: flex;
   align-items: center;
