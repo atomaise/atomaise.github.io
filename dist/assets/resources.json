@@ -1,0 +1,45 @@
+[
+  {
+    "id": "jic-populations",
+    "title": "Jet-in-crossflow droplet populations",
+    "summary": "A systematic LES dataset spanning operating conditions, stochastic-field realisations, droplet populations and liquid-structure imagery.",
+    "types": ["Dataset"],
+    "flows": ["Spray", "Jet in crossflow"],
+    "methods": ["Numerical"],
+    "outputs": ["Droplet size", "Droplet velocity", "Images", "Operating metadata"],
+    "access": "Open",
+    "status": "In preparation",
+    "provider": "University of Oxford",
+    "url": "",
+    "featured": true
+  },
+  {
+    "id": "jic-droplet-mdn",
+    "title": "Uncertainty-aware droplet distribution model",
+    "summary": "A mixture-density model for predicting continuous droplet-population distributions from non-dimensional operating conditions.",
+    "types": ["Model"],
+    "flows": ["Spray", "Jet in crossflow"],
+    "methods": ["Machine learning"],
+    "outputs": ["Probability density", "Predictive uncertainty"],
+    "access": "Open",
+    "status": "In preparation",
+    "provider": "University of Oxford",
+    "authors": ["Tretola", "Peppolo"],
+    "url": "",
+    "featured": true
+  },
+  {
+    "id": "jic-droplet-cnn",
+    "title": "Image recognition for Jet Into Crossflow",
+    "summary": "A CNN model to recognise the non-dimensional operating conditions from the jeet of an image.",
+    "types": ["Model"],
+    "flows": ["Spray", "Jet in crossflow"],
+    "methods": ["Machine learning"],
+    "outputs": ["Classification"],
+    "access": "Open",
+    "status": "In preparation",
+    "provider": "University of Oxford",
+    "url": "",
+    "featured": true
+  }
+]

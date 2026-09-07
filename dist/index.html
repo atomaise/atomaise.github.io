@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en" data-base=".">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <meta name="description" content="An open catalogue of datasets, models, benchmarks and tools for sprays and multiphase flows."> -->
+  <meta name="description" content="AtomAIse is an open catalogue of datasets, models, benchmarks and tools for sprays and multiphase flows.">
+  <title>AtomAIse — Open resources for sprays and multiphase flows</title>
+  <link rel="stylesheet" href="assets/styles.css">
+  <script defer src="assets/site-config.js"></script>
+  <script defer src="assets/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="brand" href="./"><span>AtomAIse</span><small>sprays · multiphase · AI</small></a>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <div class="nav-links" id="nav-links" data-nav-links>
+        <a href="catalogue/">Catalogue</a>
+        <a href="contribute/">Contribute</a>
+        <a href="about/">About</a>
+        <a href="#" data-repository-link hidden>GitHub</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">Open research infrastructure</p>
+        <div class="hero-grid">
+          <div>
+            <h1>Find the resources that move multiphase research forward.</h1>
+            <p class="hero-copy">A community catalogue of datasets, models, benchmarks, software and learning material for sprays and multiphase flows.</p>
+          </div>
+          <aside class="hero-note">
+            <strong>Built to connect, not duplicate.</strong>
+            <p>Resources stay with their original authors and repositories. AtomAIse makes them easier to discover, compare and reuse.</p>
+          </aside>
+        </div>
+        <form class="search-panel" action="catalogue/" method="get">
+          <label class="skip-link" for="home-search">Search the catalogue</label>
+          <input id="home-search" name="q" type="search" placeholder="Search by flow, method, measurement or resource name…">
+          <button class="button" type="submit">Search catalogue</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="stats" aria-label="Catalogue summary">
+          <div class="stat"><strong data-total-resources>—</strong><span>resources indexed</span></div>
+          <div class="stat"><strong data-total-types>—</strong><span>resource types</span></div>
+          <div class="stat"><strong data-total-providers>—</strong><span>contributing groups</span></div>
+          <div class="stat"><strong data-open-resources>—</strong><span>open resources</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="eyebrow">Browse by resource</p><h2>One catalogue, several ways in</h2></div>
+        </div>
+        <div class="type-grid">
+          <a class="type-card" href="catalogue/?type=Dataset"><span class="type-index">01</span><h3>Datasets</h3><p>Experimental and numerical data with access, provenance and reuse information.</p></a>
+          <a class="type-card" href="catalogue/?type=Model"><span class="type-index">02</span><h3>Models</h3><p>Trained models, reduced-order methods and reproducible inference code.</p></a>
+          <a class="type-card" href="catalogue/?type=Benchmark"><span class="type-index">03</span><h3>Benchmarks</h3><p>Common test cases, target conditions and evaluation protocols.</p></a>
+          <a class="type-card" href="catalogue/?type=Software"><span class="type-index">04</span><h3>Software</h3><p>Open tools, solvers and workflows for multiphase-flow research.</p></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="eyebrow">Selected resources</p><h2>Start exploring</h2></div>
+          <a class="button secondary" href="catalogue/">View full catalogue</a>
+        </div>
+        <div class="resource-grid" data-resource-grid data-featured="true" aria-live="polite"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>AtomAIse is an open community index for sprays and multiphase flows.</p>
+      <div class="footer-links"><a href="contribute/">Contribute</a><a href="about/">About</a></div>
+    </div>
+  </footer>
+</body>
+</html>

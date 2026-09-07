@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en" data-base="..">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Browse datasets, models, benchmarks, software and tutorials for sprays and multiphase flows.">
+  <title>Resource catalogue — AtomAIse</title>
+  <link rel="stylesheet" href="../assets/styles.css">
+  <script defer src="../assets/site-config.js"></script>
+  <script defer src="../assets/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="brand" href="../"><span>AtomAIse</span><small>sprays · multiphase flows· AI</small></a>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <div class="nav-links" id="nav-links" data-nav-links>
+        <a href="./" aria-current="page">Catalogue</a>
+        <a href="../contribute/">Contribute</a>
+        <a href="../about/">About</a>
+        <a href="#" data-repository-link hidden>GitHub</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Resource catalogue</p>
+        <h1>Search across the multiphase-flow ecosystem.</h1>
+        <p>Filter by what the resource is, the flow it represents and how it was produced.
+          Each record points to the source maintained by its original authors.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container catalogue-layout">
+        <aside class="filters" aria-label="Catalogue filters">
+          <div class="filter-group"><label for="search">Search</label><input id="search" type="search" data-search placeholder="Keywords…"></div>
+          <div class="filter-group"><label for="type">Resource type</label><select id="type" data-type><option value="">All types</option></select></div>
+          <div class="filter-group"><label for="flow">Flow</label><select id="flow" data-flow><option value="">All flows</option></select></div>
+          <div class="filter-group"><label for="method">Method</label><select id="method" data-method><option value="">All methods</option></select></div>
+          <div class="filter-group"><button class="button secondary" type="button" data-reset>Clear filters</button></div>
+        </aside>
+        <div>
+          <div class="results-bar"><strong data-result-count>Loading resources…</strong><span>Links open at the source</span></div>
+          <div class="resource-grid" data-resource-grid aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid"><p>Know a resource that belongs here?</p><div class="footer-links"><a href="../contribute/">Suggest it</a><a href="../about/">About</a></div></div>
+  </footer>
+</body>
+</html>
